@@ -10,13 +10,13 @@ package com.mycompany.dado;
  * @author alex
  */
 public class NewMain {
-    private static int f;
+    private static byte f;
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        f=0;
-        Dado d1 = new Dado();
+        f=9;
+        Dado d1 = new Dado(f);
         Dado d2 = new Dado();
         for (int i = 0; i < 100; i++) {
             System.out.println(d1.lancio()+"/"+d2.lancio());
